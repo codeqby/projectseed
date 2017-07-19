@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.none.dao.AppointmentMapper">
+  <resultMap id="BaseResultMap" type="com.none.model.Appointment">
+    <id column="book_id" jdbcType="BIGINT" property="bookId" />
+    <id column="student_id" jdbcType="BIGINT" property="studentId" />
+    <result column="appoint_time" jdbcType="TIMESTAMP" property="appointTime" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="map">
+    delete from appointment
+    where book_id = #{bookId,jdbcType=BIGINT}
+      and student_id = #{studentId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.none.model.Appointment">
+    insert into appointment (book_id, student_id, appoint_time
+      )
+    values (#{bookId,jdbcType=BIGINT}, #{studentId,jdbcType=BIGINT}, #{appointTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.none.model.Appointment">
+    update appointment
+    set appoint_time = #{appointTime,jdbcType=TIMESTAMP}
+    where book_id = #{bookId,jdbcType=BIGINT}
+      and student_id = #{studentId,jdbcType=BIGINT}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="map" resultMap="BaseResultMap">
+    select book_id, student_id, appoint_time
+    from appointment
+    where book_id = #{bookId,jdbcType=BIGINT}
+      and student_id = #{studentId,jdbcType=BIGINT}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select book_id, student_id, appoint_time
+    from appointment
+  </select>
+  <resultMap id="BaseResultMap" type="com.none.model.Appointment">
+    <id column="book_id" jdbcType="BIGINT" property="bookId" />
+    <id column="student_id" jdbcType="BIGINT" property="studentId" />
+    <result column="appoint_time" jdbcType="TIMESTAMP" property="appointTime" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="map">
+    delete from appointment
+    where book_id = #{bookId,jdbcType=BIGINT}
+      and student_id = #{studentId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.none.model.Appointment">
+    insert into appointment (book_id, student_id, appoint_time
+      )
+    values (#{bookId,jdbcType=BIGINT}, #{studentId,jdbcType=BIGINT}, #{appointTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.none.model.Appointment">
+    update appointment
+    set appoint_time = #{appointTime,jdbcType=TIMESTAMP}
+    where book_id = #{bookId,jdbcType=BIGINT}
+      and student_id = #{studentId,jdbcType=BIGINT}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="map" resultMap="BaseResultMap">
+    select book_id, student_id, appoint_time
+    from appointment
+    where book_id = #{bookId,jdbcType=BIGINT}
+      and student_id = #{studentId,jdbcType=BIGINT}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select book_id, student_id, appoint_time
+    from appointment
+  </select>
+  <resultMap id="BaseResultMap" type="com.none.model.Appointment">
+    <id column="book_id" jdbcType="BIGINT" property="bookId" />
+    <id column="student_id" jdbcType="BIGINT" property="studentId" />
+    <result column="appoint_time" jdbcType="TIMESTAMP" property="appointTime" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="map">
+    delete from appointment
+    where book_id = #{bookId,jdbcType=BIGINT}
+      and student_id = #{studentId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.none.model.Appointment">
+    insert into appointment (book_id, student_id, appoint_time
+      )
+    values (#{bookId,jdbcType=BIGINT}, #{studentId,jdbcType=BIGINT}, #{appointTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.none.model.Appointment">
+    update appointment
+    set appoint_time = #{appointTime,jdbcType=TIMESTAMP}
+    where book_id = #{bookId,jdbcType=BIGINT}
+      and student_id = #{studentId,jdbcType=BIGINT}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="map" resultMap="BaseResultMap">
+    select book_id, student_id, appoint_time
+    from appointment
+    where book_id = #{bookId,jdbcType=BIGINT}
+      and student_id = #{studentId,jdbcType=BIGINT}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select book_id, student_id, appoint_time
+    from appointment
+  </select>
+  <resultMap id="BaseResultMap" type="com.none.model.Appointment">
+    <id column="book_id" jdbcType="BIGINT" property="bookId" />
+    <id column="student_id" jdbcType="BIGINT" property="studentId" />
+    <result column="appoint_time" jdbcType="TIMESTAMP" property="appointTime" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="map">
+    delete from appointment
+    where book_id = #{bookId,jdbcType=BIGINT}
+      and student_id = #{studentId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.none.model.Appointment">
+    insert into appointment (book_id, student_id, appoint_time
+      )
+    values (#{bookId,jdbcType=BIGINT}, #{studentId,jdbcType=BIGINT}, #{appointTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.none.model.Appointment">
+    update appointment
+    set appoint_time = #{appointTime,jdbcType=TIMESTAMP}
+    where book_id = #{bookId,jdbcType=BIGINT}
+      and student_id = #{studentId,jdbcType=BIGINT}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="map" resultMap="BaseResultMap">
+    select book_id, student_id, appoint_time
+    from appointment
+    where book_id = #{bookId,jdbcType=BIGINT}
+      and student_id = #{studentId,jdbcType=BIGINT}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select book_id, student_id, appoint_time
+    from appointment
+  </select>
+</mapper>
